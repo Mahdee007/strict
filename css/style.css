@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-color {
+    background-color: #f6f9f9;
+}
+
+nav {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+.navbar-toggler{
+    border: 1px solid #15a4fa;
+    padding: 0 5px;
+    transition-duration: 0.4s;
+
+}
+.navbar-toggler span{
+    display: block;
+    width: 35px;
+    height: 4px;
+    background: #15a4fa;
+    margin: 6px 0;
+    transition-duration: 0.4s;
+}
+.navbar-toggler:hover{
+    background: #2d395085;
+}
+.navbar-toggler:hover span{
+    background: #fff;
+    border: 1px solid #2d3950;
+
+}
+
+.navbar-nav .nav-link {
+    color: #2d3950;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.banner-section {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-section .row {
+    min-height: 800px;
+}
+
+.banner-section h1 {
+    font-size: 120px;
+    font-weight: 600;
+    color: white;
+}
+
+.banner-section span {
+    width: 100%;
+    height: 2px;
+    background-color: #15a4fa !important;
+    display: block;
+}
+
+.banner-section p {
+    color: #fff;
+    font-size: 20px;
+    margin: 35px 0 65px;
+}
+
+.banner-section button {
+    padding: 12px 35px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+}
+
+.banner-section button:hover {
+    background-color: #15a4fa;
+    color: #fff;
+}
+
+.banner-section a {
+    color: #fff;
+    display: block;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    animation-name: Move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Move {
+    0% {
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+    }
+
+}
+
+.about-section {
+    text-align: center;
+    padding: 75px 0 100px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.service-section {
+    padding: 60px 0;
+}
+
+.service {
+    text-align: center;
+}
+
+.service span {
+    font-size: 60px;
+    color: #f6f9f9;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 50%, #5fc3ff 50%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 50%, #5fc3ff 50%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    /* IE6-9 */
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    line-height: 100px;
+}
+
+.service span i {}
+
+.service h2 {
+    font-size: 22px;
+    color: #2d3950;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.service p {
+    font-size: 15px;
+    color: #999999;
+    max-width: 300px;
+    margin: auto;
+}
+
+.showcase-section {
+    text-align: center;
+    padding: 80px 0 110px;
+}
+
+.showcase {
+    position: relative;
+    margin-top: 30px;
+}
+
+.showcase img {}
+
+.showcase ul {
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.showcase:hover ul {
+    opacity: 1;
+    bottom: 50%;
+}
+
+
+.showcase ul li {
+    padding: 8px;
+}
+
+.showcase ul li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 40px;
+    border-radius: 3px;
+    
+}
+
+.showcase ul li a:hover {
+    
+}
+
+
+.showcase::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #15a4fae6;
+    top: 0;
+    left: 0;
+    transition-duration: 0.4s;
+}
+.showcase:hover::before{
+    
+    height: 100%;
+
+}
+
+.contact-section{
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 75px 0 100px;
+}
+
+.contact-section::before{
+    content: "";
+    background: #2d3950;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.contact-section h1{
+    color: #fff;
+}
+.contact-section p{
+    color: #999999;
+}
+
+.form-control {
+    padding: 30px 16px;
+    color: #999999;
+    background-color: #fff0;
+    border: 1px solid #999999;
+}
+label{
+    color: #999999;
+    margin-left: 20px;
+}
+
+form .btn{
+    padding: 12px 35px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+}
+form .btn:hover {
+    background-color: #15a4fa;
+    color: #fff;
+}
+
+footer{
+
+padding: 25px 0;
+}
+footer p{
+    color: #999999;
+    font-size: 15px;
+    margin: 0;
+
+}
+footer ul{
+
+}
+footer ul li{}
+footer ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #15a4fa;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px;
+    border: 1px solid #15a4fa;
+    border-radius: 4px;
+    transition-duration: .4s;
+}
+footer ul li a:hover{
+    background-color: transparent;
+}
+
+/*media-queries*/
+
+@media(max-width: 1199px){
+    .banner-section h1 {
+        font-size: 95px;
+    }
+    
+.banner-section span {
+    width: 74%;
+    margin: auto;
+}
+}
+
+
+@media(max-width: 991px){
+    .banner-section h1 {
+        font-size: 74px;
+    }
+    .banner-section p{
+        font-size: 21px;
+    }
+    .showcase-section h1{
+        font-size: 38px;
+    }
+}
+
+
+
+
+
+@media(max-width: 575px){
+    .banner-section .row{
+        min-height: 591px;
+    }
+    .banner-section h1 {
+        font-size: 68px;
+    }
+    .banner-section p{
+        font-size: 15px;
+    }
+
+    .about-section{
+        padding: 75px 40px 100px;
+    }
+    .about-section h1{
+        font-size: 29px;
+    }
+    .about-section p{
+        font-size: 17px;
+    }
+
+
+
+    .service-section .col-sm-6{
+        padding-bottom: 25px;
+    }
+
+    .showcase-section h1{
+        font-size: 33px;
+    }
+    
+
+}
+
+
+
+
+@media (max-width: 420px){
+
+}
